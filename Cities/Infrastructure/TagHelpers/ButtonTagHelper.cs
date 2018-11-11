@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Razor.TagHelpers;
 
-namespace Cities.Infrastucture.TagHelpers
+namespace Cities.Infrastructure.TagHelpers
 {
     public class ButtonTagHelper : TagHelper
     {
