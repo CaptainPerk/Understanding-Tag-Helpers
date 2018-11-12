@@ -1,20 +1,27 @@
 ﻿@model City
 @{ Layout = "_Layout"; }
 
-<form method="post" asp-action="Create">
+<form method="post">
     <div class="form-group">
-        <label asp-for="Name">Name:</label>
-        <input class="form-control" asp-for="Name" />
+        <label helper-for="Name"/>
+        <input helper-for="Name"/>
     </div>
     <div class="form-group">
-        <label asp-for="Country">Country:</label>
-        <input class="form-control" asp-for="Country" />
+        <label helper-for="Country"/>
+        <input helper-for="Country" />
     </div>
     <div class="form-group">
-        <label asp-for="Population">Population:</label>
-        <input class="form-control" asp-for="Population" />
+        <label helper-for="Population"/>
+        <input helper-for="Population" />
     </div>
-    <button type="submit" bs-button-color="danger">Add</button>
-    <button type="reset" class="btn btn-primary">Reset</button>
-    <a bs-button-color="secondary" asp-action="Index">Cancel</a>
+    <div theme="primary" class="m-1 p-1">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <a href="/Home/Index">Cancel</a>
+    </div>
+    <div class="m-1 p-1">
+        <formbutton type="submit" bg-color="danger">Add</formbutton>
+        <formbutton type="reset"/>
+        <a class="btn btn-secondary" asp-action="Index">Cancel</a>
+    </div>
 </form>

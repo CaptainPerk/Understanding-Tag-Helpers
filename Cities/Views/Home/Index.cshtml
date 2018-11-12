@@ -13,11 +13,11 @@
     @foreach (var city in Model)
     {
         <tr>
-            <td>@city.Name</td>
+            <td wrap>@city.Name</td>
             <td>@city.Country</td>
             <td class="text-right">@city.Population?.ToString("##,###")</td>
         </tr>
     }
     </tbody>
 </table>
-<a href="/Home/Create" class="btn btn-primary">Create</a>
+<a asp-action="Create" class="btn btn-primary">Create</a>
