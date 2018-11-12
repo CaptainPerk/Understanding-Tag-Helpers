@@ -7,8 +7,11 @@
     <link asp-href-include="lib/bootstrap/dist/css/*.min.css" rel="stylesheet"/>
 </head>
 <body class="m-1 p-1">
-    <div title="Cities">
-        @RenderBody()
-    </div>
+<div show-for-action="Index" class="m-1 p-1 bg-danger">
+    <h2>Important Message</h2>
+</div>
+<div title="Cities">
+    @RenderBody()
+</div>
 </body>
 </html>
