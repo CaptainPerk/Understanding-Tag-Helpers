@@ -3,16 +3,16 @@
 
 <form method="post">
     <div class="form-group">
-        <label asp-for="Name">Name:</label>
-        <input class="form-control" asp-for="Name" />
+        <label helper-for="Name"/>
+        <input helper-for="Name"/>
     </div>
     <div class="form-group">
-        <label asp-for="Country">Country:</label>
-        <input class="form-control" asp-for="Country" />
+        <label helper-for="Country"/>
+        <input helper-for="Country" />
     </div>
     <div class="form-group">
-        <label asp-for="Population">Population:</label>
-        <input class="form-control" asp-for="Population" />
+        <label helper-for="Population"/>
+        <input helper-for="Population" />
     </div>
     <formbutton type="submit" bg-color="danger">Add</formbutton>
     <formbutton type="reset"/>
